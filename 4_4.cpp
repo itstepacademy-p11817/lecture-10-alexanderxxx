@@ -1,20 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
 using namespace std;
 
 int main()
 {
 	setlocale(0, "");
-	double cost, summ;
-	int min, sec;
-	cout << "Öåíà ìèíóòû ðàçãîâîðà:";
+	double cost=0.0, summ=0.0;
+	int min=0, sec=0;
+	cout << "Ð¦ÐµÐ½Ð° Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°:";
 	cin >> cost;
-	cout << "Ìèíóò:";
+	cout << "ÐœÐ¸Ð½ÑƒÑ‚:";
 	cin >> min;
-	cout << "Ñåêóíä:";
+	cout << "Ð¡ÐµÐºÑƒÐ½Ð´:";
 	cin >> sec;
-	summ = (double)cost*min + (double)sec / 60;
-	cout << "Ñòîèìîñòü ðàçãîâîðà: " << summ << '\n';
+	summ = cost*min + (double)sec / 60;
+	cout << "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð°: " << summ << '\n';
 	system("pause");
 	return 0;
 }

@@ -1,16 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
 using namespace std;
 
 int main()
 {
 	setlocale(0, "");
-	int d, n, vd;
-	cout << "Êîëè÷åñòâî äíåé:";
+	int d=0, n=0, vd=0;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð´Ð½ÐµÐ¹:";
 	cin >> vd;
 	n = vd / 7;
 	d = vd % 7;
-	cout << n << " íåäåëü" << d << "äíåé" << '\n';
+	cout << n << " Ð½ÐµÐ´ÐµÐ»ÑŒ" << d << "Ð´Ð½ÐµÐ¹" << '\n';
 	system("pause");
 	return 0;
 }

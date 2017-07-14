@@ -1,24 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
 using namespace std;
 
 int main()
 {
 	setlocale(0, "");
-	int dl, dist;
-	double time, speed;
-	cout << "Âû÷èñëåíèå ñêîðîñòè áåãà" << '\n' << "Ââåäèòå äëèíó äèñòàíöèè (ìåòðîâ):";
+	int dl=0, dist=0;
+	double time=0.0, speed=0.0;
+	cout << "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸ Ð±ÐµÐ³Ð°" << '\n' << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ð´Ð¸ÑÑ‚Ð°Ð½Ñ†Ð¸Ð¸ (Ð¼ÐµÑ‚Ñ€Ð¾Ð²):";
 	cin >> dist;
-	cout << "Ââåäèòå âðåìÿ (ìèí.ñåê):";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ€ÐµÐ¼Ñ (Ð¼Ð¸Ð½.ÑÐµÐº):";
 	cin >> time;
-	cout << "Äèñòàíöèÿ=" << dist << " ì ";
-	int m = time;
-	int c = time * 100 - m * 100;
-	int sec = m * 60 + c;
-	cout << "Âðåìÿ:" << m << "ìèíóò " << c << "ñåêóíä. = " << sec << "ñåêóíä" << '\n';
+	cout << "Ð”Ð¸ÑÑ‚Ð°Ð½Ñ†Ð¸Ñ=" << dist << " Ð¼ ";
+	int c = time * 100 - time * 100;
+	int sec = time * 60 + c;
+	cout << "Ð’Ñ€ÐµÐ¼Ñ:" << time << "Ð¼Ð¸Ð½ÑƒÑ‚ " << c << "ÑÐµÐºÑƒÐ½Ð´. = " << sec << "ÑÐµÐºÑƒÐ½Ð´" << '\n';
 	speed = (double)dist / sec;
 	double sp = speed / 1000 * 3600;
-	cout << "Âû áåæàëè ñî ñêîðîñòüþ " << sp << "êì/÷" << '\n';
+	cout << "Ð’Ñ‹ Ð±ÐµÐ¶Ð°Ð»Ð¸ ÑÐ¾ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒÑŽ " << sp << "ÐºÐ¼/Ñ‡" << '\n';
 	system("pause");
 	return 0;
 }

@@ -1,17 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
-using namespace std;
 
 int main()
 {
 	setlocale(0, "");
-	int rassab, rassbc, mass, ras;
-	cout << "Ğàññòîÿíèå ìåæäó ïóíêòàìè À è Á:";
-	cin >> rassab;
-	cout << "Ğàññòîÿíèå ìåæäó ïóíêòàìè Á è Ñ:";
-	cin >> rassbc;
-	cout << "Âåñ ãğóçà:";
-	cin >> mass;
+	int rassab=0, rassbc=0, mass=0, ras=0;
+	std::cout << "Ğ Ğ°ÑÑÑ‚Ğ¾ÑĞ½Ğ¸Ğµ Ğ¼ĞµĞ¶Ğ´Ñƒ Ğ¿ÑƒĞ½ĞºÑ‚Ğ°Ğ¼Ğ¸ Ğ Ğ¸ Ğ‘:";
+	std::cin >> rassab;
+	std::cout << "Ğ Ğ°ÑÑÑ‚Ğ¾ÑĞ½Ğ¸Ğµ Ğ¼ĞµĞ¶Ğ´Ñƒ Ğ¿ÑƒĞ½ĞºÑ‚Ğ°Ğ¼Ğ¸ Ğ‘ Ğ¸ Ğ¡:";
+	std::cin >> rassbc;
+	std::cout << "Ğ’ĞµÑ Ğ³Ñ€ÑƒĞ·Ğ°:";
+	std::cin >> mass;
 	if (mass < 500)
 		ras = 1;
 	else if (mass < 1000)
@@ -24,16 +23,16 @@ int main()
 		ras = -1;
 	int zab = rassab*ras, zbc = rassbc*ras, zac=zab+zbc;
 	int doz = zac - 300;
-	if (ras = -1)
-		cout << "Ñàìîë¸ò ïåğåãğóæåí è ñëåäîâàòåëüíî õğåí âçëåòèò" << '\n';
+	if (ras == -1)
+		std::cout << "Ğ¡Ğ°Ğ¼Ğ¾Ğ»Ñ‘Ñ‚ Ğ¿ĞµÑ€ĞµĞ³Ñ€ÑƒĞ¶ĞµĞ½ Ğ¸ ÑĞ»ĞµĞ´Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ Ñ…Ñ€ĞµĞ½ Ğ²Ğ·Ğ»ĞµÑ‚Ğ¸Ñ‚" << '\n';
 	else if (zab > 300)
-		cout << "Õğåí äîëåòèò äî ïóíêòà Á" << '\n';
+		std::cout << "Ğ¥Ñ€ĞµĞ½ Ğ´Ğ¾Ğ»ĞµÑ‚Ğ¸Ñ‚ Ğ´Ğ¾ Ğ¿ÑƒĞ½ĞºÑ‚Ğ° Ğ‘" << '\n';
 	else if (zbc > 300)
-		cout << "Õğåí äîëåòèò äî ïóíêòà Ñ" << '\n';
+		std::cout << "Ğ¥Ñ€ĞµĞ½ Ğ´Ğ¾Ğ»ĞµÑ‚Ğ¸Ñ‚ Ğ´Ğ¾ Ğ¿ÑƒĞ½ĞºÑ‚Ğ° Ğ¡" << '\n';
 	else if (doz <= 0)
-		cout << "Äîçàïğàâêà íå òğåáóåòñÿ" << '\n';
+		std::cout << "Ğ”Ğ¾Ğ·Ğ°Ğ¿Ñ€Ğ°Ğ²ĞºĞ° Ğ½Ğµ Ñ‚Ñ€ĞµĞ±ÑƒĞµÑ‚ÑÑ" << '\n';
 	else
-		cout << "Íàäî äîëèòü" << doz << " ëèòğîâ òîïëèâà" << '\n';
+		std::cout << "ĞĞ°Ğ´Ğ¾ Ğ´Ğ¾Ğ»Ğ¸Ñ‚ÑŒ" << doz << " Ğ»Ğ¸Ñ‚Ñ€Ğ¾Ğ² Ñ‚Ğ¾Ğ¿Ğ»Ğ¸Ğ²Ğ°" << '\n';
 	
 	system("pause");
 	return 0;
